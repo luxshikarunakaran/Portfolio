@@ -1,0 +1,722 @@
+/*$blue:#225687;*/
+
+/*@mixin heading(){
+    font-size:3rem;
+    text-align:center;
+    color:#333;
+    margin:
+}
+*/
+
+
+:root{
+    --blue:#225687;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Exo 2',sans-serif;
+    transition: all .2s linear;
+
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    height: 2000px;
+}
+
+
+/* Header */
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0.1rem 0.5rem rgba(51,51,51,0.5);
+}
+
+.header a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #333;
+}
+
+
+.header .logo h1{
+    margin-bottom: 0;
+}
+
+.header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li{
+    margin: 0 1.5rem;
+}
+
+.navbar ul li a:hover{
+    padding-bottom: 0.3rem;
+    border-bottom: 0.2rem solid var(--blue);
+}
+
+
+/* Home Section */
+
+.home{
+    background: url(images/img2.avif) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.home h2{
+    font-size: 3rem;
+    color: #1b0101;
+}
+
+.home h1{
+    font-size: 4rem;
+    color: #333;
+    margin: 2rem 0;
+    text-shadow: .1rem .1rem .1rem rgba(255,255,255,.9);
+}
+
+.home span{
+    color: var(--blue);
+    margin: 0;
+}
+
+.home button{
+    height: 4rem;
+    width: 16rem;
+    background: #333;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    box-shadow: 0 .5rem 1rem rgba(51,51,51,0.3);
+}
+
+
+/* About */
+
+.about{
+    padding-bottom: 3rem;
+}
+
+.about .heading {
+    font-size:3rem;
+    text-align:center;
+    color:#333;
+    margin:3rem 0;
+    padding-top: 5.5rem;
+    position: relative;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.about .heading::after{
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: .3rem;
+    width: 5rem;
+    background: #333;
+}
+
+.about .info{
+    padding: 0 2rem;
+}
+
+.about .info h2{
+    font-size: 3rem;
+    color: var(--blue);
+}
+
+.about .info p{
+    font-size: 1.7rem;
+    color: #333;
+    padding-bottom: 3rem;
+}
+
+.about .info .skill-bar h3{
+    margin-top: 2rem;
+}
+
+.about .info .skill-bar h3 span{
+    display: block;
+    text-align: end;
+}
+
+.about .info .skill-bar .bar{
+    width: 100%;
+    height: .5rem;
+    background: #ccc;
+    position: relative;
+}
+
+.about .info .skill-bar .bar span{
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: var(--blue);
+}
+
+.about .info .skill-bar .bar1 span{
+    width: 95%;
+}
+
+.about .info .skill-bar .bar2 span{
+    width: 80%;
+}
+
+.about .info .skill-bar .bar3 span{
+    width: 55%;
+}
+
+.about .info .skill-bar .bar4 span{
+    width: 95%;
+}
+
+
+
+/* Service */
+/*
+.service{
+    min-height: 100vh;
+}
+
+.service .heading{
+    font-size:3rem;
+    text-align:center;
+    color:#333;
+    margin:3rem 0;
+    padding-top: 5.5rem;
+    position: relative;
+}
+
+.service .heading::after{
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: .3rem;
+    width: 5rem;
+    background: #333;
+}
+*/
+
+.service{
+    padding-bottom: 3rem;
+}
+
+.service .heading {
+    font-size:3rem;
+    text-align:center;
+    color:#333;
+    margin:3rem 0;
+    padding-top: 5.5rem;
+    position: relative;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.service .heading::after{
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: .3rem;
+    width: 5rem;
+    background: #333;
+}
+
+
+.service .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap ;
+}
+
+
+.service .box-container .box{
+    height: 20rem;
+    width: 25rem;
+    /*background: #f7f7f7;*/
+    background: #fff;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 5rem;
+    margin: 2rem;
+    border-radius: .2rem;
+}
+
+
+.service .box-container .box img{
+    height:8rem;
+    width: 8rem;
+}
+
+.service .box-container .box h2{
+    padding-top: 1rem;
+    color: #333;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+}
+
+.service .box-container .box:hover{
+    background: #345;
+
+}
+
+.service .box-container .box h2:hover{
+    background: #fff;
+    
+}
+
+.service .box-container .box img:hover{
+    filter: invert(1);
+    
+}
+
+/* Experience */
+
+/*
+.experience{
+    min-height: 100vh;
+    background: #333;
+}
+
+.experience .heading{
+    font-size:3rem;
+    text-align:center;
+    color:#333;
+    margin:3rem 0;
+    padding-top: 5.5rem;
+    position: relative;
+    color: #fff;
+}
+
+.experience .heading::after{
+   background: #fff;
+}
+*/
+
+.experience{
+    padding-bottom: 3rem;
+    background: #333;
+}
+
+.experience .heading {
+    font-size:3rem;
+    text-align:center;
+    color:#9b9c9a;
+    margin:3rem 0;
+    padding-top: 5.5rem;
+    position: relative;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.experience .heading::after{
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: .3rem;
+    width: 5rem;
+    background: #9b9c9a;
+}
+
+/*
+.experience .box{
+    height: 23rem;
+    width: 100%;
+    padding-left: 2.5rem;
+    border-left: .1rem solid #fff;
+    position: relative;
+}
+*/
+
+
+.experience .box-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    padding: 1rem 0;
+    padding-left: 3rem ;
+}
+
+.experience .box-container .box{
+    width: 50rem;
+    margin: 2rem 1rem;
+    padding-left:4rem ;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+
+
+.experience .box::after{
+    content: '';
+    position: absolute;
+    top: .5rem;
+    left: -1rem;
+    height: 2rem;
+    width: 2rem;
+    background: #fff;
+    border-radius: 5rem;
+}
+
+
+
+
+
+.experience .box .year{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.experience .box h3{
+    font-size: 2rem;
+    color: rgb(221, 221, 9);
+    margin: 1rem 0;
+}
+
+.experience .box p{
+    color: #ccc;
+    font-size: 1.5rem;
+}
+
+/* experience ends */
+
+#counter{
+    width: 100%;
+    background: linear-gradient(180deg,#333 50%,#fff 50%);
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#counter .counter-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 2rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem rgba(51,51,51,0.3);
+}
+
+#counter .counter-box .count{
+    margin: 2rem 3.5rem;
+}
+
+#counter .counter-box .count .number{
+    font-size: 3.5rem;
+    color: var(--blue);
+}
+
+#counter .counter-box .count h2{
+    font-size: 1.7rem;
+}
+
+
+/* Portfolio Section */
+
+/*
+.portfolio{
+    min-height: 100vh;
+}
+
+.portfolio .heading{
+    font-size:3rem;
+    text-align:center;
+    color:#333;
+    margin:3rem 0;
+    padding-top: 5.5rem;
+    position: relative;
+}
+
+*/
+
+.portfolio{
+    padding-bottom: 3rem;
+}
+
+.portfolio .heading {
+    font-size:3rem;
+    text-align:center;
+    color:#333;
+    margin:3rem 0;
+    padding-top: 5.5rem;
+    position: relative;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.portfolio .heading::after{
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: .3rem;
+    width: 5rem;
+    background: #333;
+}
+
+
+.portfolio .controls{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.portfolio .controls .buttons{
+    height: 4rem;
+    width: 15rem;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.portfolio .controls .buttons:hover{
+    background: var(--blue);
+    box-shadow: 0 .5rem .5rem rgba(51,51,51,0.3);
+}
+
+.portfolio .controls .active{
+    background: rgba(14, 65, 4);
+    box-shadow: 0 .5rem .5rem rgba(51,51,51,0.3);
+}
+
+.portfolio .images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio .images .filter-image{
+    height: 18rem;
+    width: 25rem;
+    border-radius: .5rem;
+    margin: 2rem;
+    object-fit: cover;
+}
+
+
+/* Contact Section */
+
+.contact{
+   /* min-height: 90vh;*/
+    padding-bottom: 3rem;
+}
+
+.contact .heading{
+    font-size:3rem;
+    text-align:center;
+    color:#333;
+    margin:3rem 0;
+    padding-top: 5.5rem;
+    position: relative;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.contact .inputBox{
+    padding: 0 1rem;
+}
+
+.contact .inputBox .name, .email, textarea{
+    height: 3rem;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: .1rem solid #333;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    font-size: 1.8rem;
+}
+
+.contact .inputBox .name, .email, textarea:focus{
+    border-bottom: .2rem solid var(--blue);
+}
+
+.contact .inputBox .name{
+    width: 45%;
+}
+
+.contact .inputBox textarea{
+    height: 20rem;
+    border: .1rem solid #333;
+    resize: none;
+}
+
+.contact .inputBox textarea:focus{
+    border: .2rem solid var(--blue);
+}
+
+.contact .name-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact input[type="submit"]{
+    height: 4rem;
+    width: 12rem;
+    background: #016901;
+    color: #fff;
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    outline: none;
+    border: none;
+}
+
+.contact input[type="submit"]:hover{
+    background: rgba(6, 8, 139, 0.3);
+    box-shadow: 0 .5rem 1rem rgba(85, 4, 4, 0.3);
+}
+
+.contact .info .info-box{
+    margin: 4.5rem 1rem;
+}
+
+.contact .info .info-box h2{
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.contact .info .info-box h2 i{
+    padding: 0 1rem;
+    color: #333;
+}
+
+.contact .info .info-box p{
+    font-size: 1.7rem;
+    color: #666;
+    padding-left: 3.5rem;
+    font-weight:100;
+}
+
+/* footer */
+
+#footer{
+    background: #f9f9f9;
+    padding: 1.5rem 0;
+    border-top: .1rem solid rgba(51,51,51,0.3);
+}
+
+#footer h1{
+    color: #333;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    margin-bottom: 0;
+    letter-spacing: .1rem;
+}
+
+#footer h1 span{
+    color: var(--blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -- Media quries -- */
+
+@media (max-width:768px){
+    html{
+        font-size: 55%;
+    }
+
+    .home{
+        background-position: center;
+    }
+
+    .header .fa-bars{
+        display: block;
+    }
+
+    .header .navbar{
+        position: fixed;
+        top: -120%;
+        left: 0;
+        height: calc(100vh -5.2rem);
+        width: 100vw;
+        background: #fff;
+        border-top: 0.1rem solid rgba(51,51,51,0.3);
+    }
+
+    .header .navbar ul{
+        height: 100%;
+        width: 100%;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .header .navbar ul li{
+        margin: 1.5rem 0;
+    }
+
+    .header .navbar ul li a{
+        font-size: 2.5rem;
+    }
+
+    .header .nav-toggle{
+        top: 5.2rem;
+
+    }
+}
